@@ -49,6 +49,8 @@ def get_greeting():
         greeting = 'Добрый день'
     elif 17 <= hour < 23:
         greeting = 'Добрый вечер'
+    else:
+        greeting = 'Доброй ночи'
 
     return greeting
 
