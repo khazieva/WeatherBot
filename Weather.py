@@ -1,7 +1,9 @@
 import requests
 
 
+# Функция для получения проргноза погоды.
 def show_weather_spb():
+    # Описание API MetaWeather — https://www.metaweather.com/api/
     weather_data = []
     weather_url = 'https://www.metaweather.com/api/location'
     res = requests.get('{}/search/?query=St%20Petersburg'.format(weather_url))
